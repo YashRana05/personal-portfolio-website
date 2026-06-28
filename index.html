@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div class="brand-mark">{}</div>
+        <div>
+          <div class="brand-title" id="brandName">Your Name</div>
+          <div class="brand-sub" id="brandTagline">Software Developer • Building full-stack apps</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Hi, I'm <span id="heroName">Your Name</span>.</h1>
+          <p class="lead" id="heroBio">I design, build, and deploy web applications. Browse my projects and skills below.</p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">View Projects</a>
+            <button class="btn btn-ghost" id="loadProjectsBtn" type="button">Load Projects</button>
+          </div>
+          <div class="muted" style="margin-top:12px;">Tip: Edit <code>server/data/seed.json</code> to change projects.</div>
+        </div>
+        <div class="hero-card">
+          <div class="stat">
+            <div class="stat-num" id="statProjects">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" id="statSkills">0</div>
+            <div class="stat-label">Skills</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" id="statOpenSource">1</div>
+            <div class="stat-label">Open to work</div>
+          </div>
+          <div class="hero-note">Backend is powered by Node.js/Express + SQLite in this demo.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <div class="section-sub">Stored in a database and rendered from the API</div>
+        </div>
+
+        <div class="grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <div class="section-sub">Tech I’ve used</div>
+        </div>
+
+        <div class="chips" id="skillsChips"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="card">
+          <h3>About</h3>
+          <p id="aboutText">Write your story here. This template includes a full-stack API so you can manage projects through a database.</p>
+        </div>
+        <div class="card">
+          <h3>What’s included</h3>
+          <ul class="checklist">
+            <li>Frontend: HTML/CSS/JS</li>
+            <li>Backend: Node.js + Express</li>
+            <li>Database: SQLite</li>
+            <li>Deployable: works with Render/Railway/Fly.io/Vercel (API container)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">This demo includes a simple contact endpoint.</p>
+          <form class="form" id="contactForm">
+            <label>
+              <span>Your name</span>
+              <input required name="name" placeholder="Jane Doe" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input required name="email" type="email" placeholder="jane@example.com" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea required name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            </label>
+            <button class="btn" type="submit">Send</button>
+            <div class="form-status" id="contactStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Quick Links</h3>
+          <div class="links">
+            <a class="link" href="#" onclick="return false">GitHub</a>
+            <a class="link" href="#" onclick="return false">LinkedIn</a>
+            <a class="link" href="#" onclick="return false">Resume</a>
+          </div>
+          <div class="divider"></div>
+          <div class="muted">Update quick links in <code>index.html</code>.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Your Name</span>
+      <span class="muted">Built with Express + SQLite</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

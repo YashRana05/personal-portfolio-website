@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "name": "Your Name",
+    "tagline": "Software Developer • Building full-stack apps",
+    "bio": "I build full-stack web applications with clean UX and reliable backends. This demo stores your projects, skills, and contact form submissions in a database."
+  },
+  "projects": [
+    {
+      "title": "Project One",
+      "description": "A full-stack app with an API + database. Replace this with your real project.",
+      "tech": ["Node.js", "Express", "SQLite", "REST"],
+      "repo_url": "https://github.com/yourname/yourrepo",
+      "live_url": "https://example.com",
+      "sort_order": 0
+    },
+    {
+      "title": "Project Two",
+      "description": "Another project idea—showcase features, tech choices, and results.",
+      "tech": ["JavaScript", "HTML", "CSS", "Deployment"],
+      "repo_url": "https://github.com/yourname/yourrepo2",
+      "live_url": "",
+      "sort_order": 1
+    },
+    {
+      "title": "Project Three",
+      "description": "Add screenshots, a short summary, and why it’s useful.",
+      "tech": ["Auth", "APIs", "Database"],
+      "repo_url": "",
+      "live_url": "",
+      "sort_order": 2
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "SQL",
+    "SQLite",
+    "HTML",
+    "CSS",
+    "Git",
+    "Deployment"
+  ]
+}
+
